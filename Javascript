@@ -1,0 +1,17 @@
+const audioPlayer = document.getElementById('audio-player');
+const playButton = document.getElementById('play-btn');
+const pauseButton = document.getElementById('pause-btn');
+const stopButton = document.getElementById('stop-btn');
+
+playButton.addEventListener('click', () => {
+	audioPlayer.play();
+});
+
+pauseButton.addEventListener('click', () => {
+	audioPlayer.pause();
+});
+
+stopButton.addEventListener('click', () => {
+	audioPlayer.currentTime = 0;
+	audioPlayer.pause();
+});
